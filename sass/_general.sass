@@ -1,108 +1,161 @@
+$blue-color: #1900C9
+$yellow-color: #EDFD00
+$orange-color: #FF8700
 
 .header
     height: 100px
+    padding: 10px 0
     position: relative
-    padding: 20px 0 
-    &_list
-        
+    padding-top: 20px
+    background: url('../img/header_bg.jpg') center center/cover no-repeat
 
+    a
+        text-decoration: none
+    &_logo
         display: flex
-        text-decoration: none
-        
-        &_item
-            list-style-type: none
-            position: relative
-            margin-right: 70px
-            font-size: 24px
-            margin-top: 12px
-            display: flex
-            &:first-child
-                margin-top: 0
-            &_social
-                color: $blue-color
-                margin-right: 15px
-                &:hover
-                    color: $yellow-color
-                &:last-child
-                    margin-right: 0
-                    color: #2fff00
-                    
-            a
-                text-decoration: none
-                transition: 0.1s
-                &:hover
-                    margin-top: 2px
-                    color: $yellow-color
-
-            &_link
-                color: #000
-                &_logo
-                    display: flex
-                    text-decoration: none
-                    margin-right: 50px
-                    img
-                        margin-right: 10px
-                        height: 60px
-                    &_text
-                        font-size: 60px
-                        font-weight: 700
-                        line-height: 60px
-                        color: $blue-color
-                        &:hover
-                            color: $yellow-color
-                        
-.main
-    height: 700px
-    background: url(../img/main_bg.jpg) center (center/cover) no-repeat
-    text-align: center
-    margin-top: 60px
-    padding-top: 50px
-    &_title
-        
-        font-size: 36px
-        margin-bottom: 10px
-        font-weight: 900
-    &_snami
-        font-size: 160px
-        font-weight: 900
-        line-height: 120px
-        color: $blue-color
-        margin-bottom: 10px
-    &_text
-        font-size: 24px
-        margin-bottom: 10px
-    &_btn
-        display: inline-block
-        width: 300px
-        height: 100px
-        border-radius: 30px
-        background-color: $blue-color
-        text-decoration: none
-        font-size: 30px
-        color: #fff
-        padding-top: 25px
-        transition: 0.3s
-        &:hover 
-            color: $blue-color
+        margin-left: 40px
+        justify-content: flex-start
+        &_text
+            margin-left: 5px
             text-decoration: none
-            background-color: $yellow-color
+            font-size: 40px
+            text-transform: uppercase
+            font-weight: 900
+            color: $blue-color 
+    &_nav
+        position: relative
+
+        &_list
+            display: flex
+            justify-content: flex-start
+            margin-top: 11px
+            
+            &_item
+                list-style-type: none
+                font-size: 20px
+                font-weight: 500
+                margin-right: 15px
+                a
+                    color: #000
+                    transition: 0.1s
+                    &:hover
+                        color: $yellow-color
+    &_btn
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 80%
+        height: 50px
+        background-color: $blue-color
+        border-radius: 32px
+        color: #fff
+        font-size: 22px
+        border: none
+        &:hover
+            background-color: $yellow-color 
+        &:focus
+            color: #000
+        &:visited, &:focus, &:active, &:hover
+            outline:0 none !important
+    &_connect
+        margin-top: 5px
+        border: 1px solid black
+        border-radius: 30px
+        width: 40%    
+        height: 40px  
+        justify-content: space-around
+        background: transparent
+        transition: 0.3s
+        margin-right: 10px
+        &:visited, &:focus, &:active, &:hover
+            outline:0 none !important
+        &_viber
+            &:hover
+                background-color: #8C66A9
+                border: none
+                color: #fff
+        &_whatsapp
+            &:hover
+                background-color: #5CFA7B
+                border: none
+                color: #fff
+
+    &_social
+        margin-top: 10px
+        display: flex
+        justify-content: flex-start
+        position: relative
+        &_item
+            width: 34px
+            height: 34px
+            border-radius: 100%
+            background-color: #000
+            display: flex
+            justify-content: center
+            align-items: center   
+            margin-right: 5px             
+            &_inst
+                color: #fff
+                &:hover
+                    background: linear-gradient(45deg, #992EBF, #FEBA4C)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+            &_vk
+                color: #fff
+                &:hover
+                    color: #2787F5
+            &_yt
+                color: #fff
+                &:hover
+                    color: #FF0000
 
 
-.how
-    padding: 70px 0 
-    &_title
-        text-align: center
-        font-size: 30px
+
+.main
+    height: 750px
+    color: #000
+    padding-top: 11px
+    text-align: center
+    display: flex
+    text-decoration: none
+    background: url('../img/main_bg.jpg') center center/cover no-repeat 
+    &_header
+        font-size: 34px
+        font-weight: 600
+    &_name
         font-weight: 900
-        margin-bottom: 70px
-    &_block
-        padding: 10px
-        &_icon
-            text-align: center
-            font-size: 100px
-            color: $blue-color
-        &_title
-            font-size: 22px
-            text-align: center
-            font-weight: 500
-            margin-bottom: 10px
+        font-size: 100px
+        text-transform: uppercase
+    &_text
+        margin-bottom: 20px
+        text-align: center
+        font-size: 32px
+        font-weight: 400
+    &_dot
+        margin-top: 10px
+        justify-content: center
+    &_dottext
+        text-align-last: left
+        font-size: 30px
+        margin-top: 15px
+    a
+        text-decoration: none
+    &_btn
+        display: block
+        border-radius: 96px
+        width: 470px
+        height: 117px
+        background-color: $blue-color
+        padding-top: 27px
+        margin-top: 40px
+        color: #fff
+        font-size: 36px
+        font-weight: 400
+        text-aling: center
+        &:hover
+            background-color: $yellow-color 
+        &:focus
+            color: #000
+        &:visited, &:focus, &:active, &:hover
+            outline:0 none !important
+        
